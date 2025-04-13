@@ -1,0 +1,77 @@
+# KiCad 项目文件（保留这些，不要忽略）
+# *.pro
+# *.kicad_pcb
+# *.sch
+# *.kicad_wks
+
+### 临时文件和备份文件 ###
+# 自动备份文件
+*.bak
+*.sch-bak
+*.kicad_pcb-bak
+*.kicad_prl
+*.kicad_pro.lock
+*~
+*.tmp
+
+# 自动保存文件
+*.000
+*.pcbnew
+*.schematic
+
+### 用户配置（可能包含本地路径） ###
+fp-lib-table
+sym-lib-table
+*.kicad_pro.user  # 用户偏好设置（不建议共享）
+
+### 生成文件/输出文件 ###
+# 网表文件
+*.net
+
+# Gerber/制造文件
+*.gbr
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.drl
+*.gm1
+*.zip  # 如果导出 Gerber 为 ZIP
+
+# BOM 文件
+*.csv
+*.xlsx
+*.txt
+
+# 3D 模型
+*.step
+*.stl
+*.wrl
+
+# PDF 输出（可选，如果不需要跟踪）
+*.pdf
+
+### 目录 ###
+# 常见输出目录
+/gerbers/
+/output/
+/bom/
+/3d_models/
+/autosave/
+
+### 操作系统垃圾文件 ###
+.DS_Store
+Thumbs.db
+
+### IDE/编辑器文件 ###
+.idea/
+.vscode/
+*.kicad_pro.lock
+
+### 目录 ###
+# 忽略所有以 backup 结尾的目录（新增）
+**/*backups/

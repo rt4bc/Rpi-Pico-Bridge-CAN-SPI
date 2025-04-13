@@ -1,0 +1,127 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "c526e672-7a53-4084-90ef-9e594d9bb288")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 88.9 64.77)
+		(size 24.13 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "86dc6215-b418-4403-880d-3017b5a1b73a")
+		(property "Sheetname" "CAN-FD-Interface"
+			(at 88.9 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can_fd.kicad_sch"
+			(at 88.9 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RP2040-Bridge-CAN-SPI"
+				(path "/c526e672-7a53-4084-90ef-9e594d9bb288"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.18 64.77)
+		(size 19.05 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8a907ce0-3679-4d53-a428-5bd2c36da482")
+		(property "Sheetname" "SPI-Interface"
+			(at 170.18 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "spi.kicad_sch"
+			(at 170.18 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RP2040-Bridge-CAN-SPI"
+				(path "/c526e672-7a53-4084-90ef-9e594d9bb288"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 64.77)
+		(size 22.86 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8ec69825-06b1-4e9d-92e9-521d0fefb9e8")
+		(property "Sheetname" "RP2040-Pico"
+			(at 128.27 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rp2040_pico.kicad_sch"
+			(at 128.27 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RP2040-Bridge-CAN-SPI"
+				(path "/c526e672-7a53-4084-90ef-9e594d9bb288"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
