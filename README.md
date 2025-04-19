@@ -52,20 +52,17 @@ Send SPI commands to the Pico, which will translate and forward them to the CAN 
 - 支持标准帧和扩展帧格式
 - 可配置的波特率与过滤器
 - 采用 Raspberry Pi Pico 和 MCP2518FD 芯片
-- 固件易于使用 C/C++ 或 MicroPython 修改
 
 ## 硬件需求
 
 - Raspberry Pi Pico（RP2040）
 - MCP2518FD（SPI接口）
-- TJA1051 或兼容 CAN 收发器
 - 电源（3.3V 或 5V，视 CAN 收发器而定）
 - 可选：CAN 总线终端电阻（120Ω）
 
 ## 软件配置
 
 1. 克隆本项目代码。
-2. 使用 [Thonny](https://thonny.org/) 或其他烧录工具将固件烧录到 Pico。
 3. 将主控设备通过 SPI 接口连接到 Pico。
 4. 使用 SPI 库与 Pico 通信并发送/接收 CAN 消息。
 
