@@ -4,41 +4,29 @@
 
 This project is a CAN-to-SPI controller built using the MCP2518FD CAN controller and the Raspberry Pi Pico (RP2040). It allows communication between CAN and SPI-enabled devices, making it useful for embedded applications, automotive networks, and industrial control systems.
 
-## Features
+RP2040's SPI1&I2C1 defaualt configured as a controller, which make it possbile bridge the CAN bus and other SPI&I2C peripherals.
 
+
+
+## Features
+- Built with Raspberry Pi Pico (RP2040) and MCP2518FD
+- RP2040 SPI1 as SPI controller which can communicate with mikro interface
+- RP2040 SPI0 as SPI controller which works with MCP2518FD
 - CAN FD support (up to 8 Mbps)
-- SPI interface to host system
 - Supports standard and extended CAN IDs
 - Configurable bit rates and filters
-- Built with Raspberry Pi Pico (RP2040) and MCP2518FD
-- Easy-to-modify firmware in C/C++ or MicroPython
 
 ## Hardware Requirements
 
 - Raspberry Pi Pico (RP2040)
 - MCP2518FD CAN controller with SPI interface
-- TJA1051 or equivalent CAN transceiver
 - Power supply (3.3V/5V depending on CAN transceiver)
 - Optional: CAN bus terminator (120Ω)
 
-## Pin Connections
-
-| MCP2518FD | Pico (RP2040) |
-|-----------|----------------|
-| SCK       | GP2 (SPI0 SCK) |
-| MOSI      | GP3 (SPI0 TX)  |
-| MISO      | GP4 (SPI0 RX)  |
-| CS        | GP5 (Chip Select) |
-| INT       | GP6 (Interrupt) |
-| GND       | GND            |
-| VCC       | 3.3V           |
-
 ## Software Setup
 
-1. Clone this repository.
-2. Flash the provided firmware to the Raspberry Pi Pico using [Thonny](https://thonny.org/) or other uploader tools.
-3. Connect to the device via SPI on the host system.
-4. Use your preferred SPI library to send/receive CAN messages.
+1. Clone this fw repository.
+2. Use PC GUI 
 
 ## Usage
 
@@ -46,9 +34,8 @@ Send SPI commands to the Pico, which will translate and forward them to the CAN 
 
 ## TODO
 
-- Add Python/C demo for host-side communication
-- Add support for CAN filters
-- Add error handling/logging
+- CAN Bus GUI Tools
+- USB configure tools
 
 ---
 
@@ -75,18 +62,6 @@ Send SPI commands to the Pico, which will translate and forward them to the CAN 
 - 电源（3.3V 或 5V，视 CAN 收发器而定）
 - 可选：CAN 总线终端电阻（120Ω）
 
-## 引脚连接
-
-| MCP2518FD | Pico (RP2040) |
-|-----------|----------------|
-| SCK       | GP2（SPI0 SCK）|
-| MOSI      | GP3（SPI0 TX） |
-| MISO      | GP4（SPI0 RX） |
-| CS        | GP5（片选）     |
-| INT       | GP6（中断）     |
-| GND       | GND            |
-| VCC       | 3.3V           |
-
 ## 软件配置
 
 1. 克隆本项目代码。
@@ -98,8 +73,3 @@ Send SPI commands to the Pico, which will translate and forward them to the CAN 
 
 主控系统通过 SPI 向 Pico 发送命令，Pico 再通过 MCP2518FD 将其转发至 CAN 总线。同时，CAN 总线接收到的数据也会被 Pico 通过 SPI 回传至主控系统。
 
-## 待办事项
-
-- 添加 Python/C 示例程序（主机端）
-- 支持更多 CAN 过滤器功能
-- 添加错误处理与日志功能

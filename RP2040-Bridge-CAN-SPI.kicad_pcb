@@ -5189,9 +5189,9 @@
 			(pintype "bidirectional")
 			(uuid "763aef68-05a7-4b21-9875-53f662e10f54")
 		)
-		(model "${KIPRJMOD}/refrence-design/Pico-R3.step"
+		(model "${KIPRJMOD}/reference-design/Pico-R3.step"
 			(offset
-				(xyz -10.795 -25.4 0)
+				(xyz -10.541 -25.4 0)
 			)
 			(scale
 				(xyz 1 1 1)
