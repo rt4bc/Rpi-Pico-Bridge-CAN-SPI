@@ -6,7 +6,7 @@ This project is a CAN-to-SPI controller built using the MCP2518FD CAN controller
 
 RP2040's SPI1&I2C1 defaualt configured as a controller, which make it possbile bridge the CAN bus and other SPI&I2C peripherals.
 
-
+![RP2040-CAN-Bridge](./output/RP2040-Bridge-CAN-SPI.png.png)
 
 ## Features
 - Built with Raspberry Pi Pico (RP2040) and MCP2518FD
