@@ -55,7 +55,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "8a907ce0-3679-4d53-a428-5bd2c36da482")
-		(property "Sheetname" "SPI-Interface"
+		(property "Sheetname" "Mikro-Interface"
 			(at 170.18 64.0584 0)
 			(effects
 				(font
